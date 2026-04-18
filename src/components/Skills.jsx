@@ -9,13 +9,12 @@ const Skills = () => {
         <div className="max-w-3xl">
           <SectionLabel index="02" label="skills & stack" />
           <h2 className={`font-serif text-4xl md:text-5xl ${leading.section} text-ink tracking-tight mt-6`}>
-            The tools I reach for -
-            <span className="italic text-amber"> gently </span>
-            opinionated.
+            The tools I've 
+            <span className="italic text-amber"> shipped </span>
+            with.
           </h2>
           <p className={`mt-5 text-inkSoft ${proseSizes["3xl"]} leading-relaxed`}>
-            Six years of picking the right tool for the job, and occasionally
-            the wrong one on purpose, just to learn.
+            Seven years of building, breaking, and shipping across the full stack.
           </p>
         </div>
 
