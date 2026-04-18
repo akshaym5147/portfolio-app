@@ -1,3 +1,4 @@
+import { monoSizes, proseSizes, leading } from "@/lib/tailwindCssMap";
 import { skills } from "../mock";
 import SectionLabel from "./SectionLabel";
 
@@ -7,12 +8,12 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28">
         <div className="max-w-3xl">
           <SectionLabel index="02" label="skills & stack" />
-          <h2 className="font-serif text-4xl md:text-5xl leading-[1.05] text-ink tracking-tight mt-6">
+          <h2 className={`font-serif text-4xl md:text-5xl ${leading.section} text-ink tracking-tight mt-6`}>
             The tools I reach for —
             <span className="italic text-amber"> gently </span>
             opinionated.
           </h2>
-          <p className="mt-5 text-inkSoft text-[17px] leading-relaxed">
+          <p className={`mt-5 text-inkSoft ${proseSizes["3xl"]} leading-relaxed`}>
             Six years of picking the right tool for the job, and occasionally
             the wrong one on purpose, just to learn.
           </p>
@@ -28,7 +29,7 @@ const Skills = () => {
                 <div className="font-serif text-xl text-ink">
                   {group.category}
                 </div>
-                <div className="font-mono text-[11px] text-amber">
+                <div className={`font-mono ${monoSizes.xs} text-amber`}>
                   0{gi + 1}
                 </div>
               </div>
@@ -36,8 +37,8 @@ const Skills = () => {
                 {group.items.map((s) => (
                   <div key={s.name}>
                     <div className="flex items-baseline justify-between">
-                      <span className="text-ink text-[14px]">{s.name}</span>
-                      <span className="font-mono text-[11px] text-inkSoft">
+                      <span className={`text-ink ${proseSizes.sm}`}>{s.name}</span>
+                      <span className={`font-mono ${monoSizes.xs} text-inkSoft`}>
                         {s.level}
                       </span>
                     </div>

@@ -29,6 +29,7 @@ let webpackConfig = {
       // Add ignored patterns to reduce watched directories
         webpackConfig.watchOptions = {
           ...webpackConfig.watchOptions,
+          // poll: 1000,
           ignored: [
             '**/node_modules/**',
             '**/.git/**',
