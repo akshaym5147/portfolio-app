@@ -1,8 +1,8 @@
-# Akshay — Portfolio (Frontend)
+# Akshay - Portfolio (Frontend)
 
 A warm, developer-vibe portfolio site built with **React 19 + Tailwind CSS + shadcn/ui**.
 
-All data is mocked in `src/mock.js` — swap it with your own info to personalize.
+All data is mocked in `src/mock.js` - swap it with your own info to personalize.
 
 ---
 
@@ -33,7 +33,7 @@ The app runs at **http://localhost:3000**.
 yarn build
 ```
 
-The static, deployable bundle is emitted to `build/`. You can drop it on Vercel, Netlify, Cloudflare Pages, GitHub Pages, S3 — anywhere that serves static files.
+The static, deployable bundle is emitted to `build/`. You can drop it on Vercel, Netlify, Cloudflare Pages, GitHub Pages, S3 - anywhere that serves static files.
 
 ---
 
@@ -69,15 +69,15 @@ src/
 
 Edit `src/mock.js`:
 
-- `profile` — your name, role, email, socials, portrait image URL
-- `aboutParagraphs` — the About copy
-- `skills` — categories + skill levels
-- `experience` — jobs (company, role, bullets, stack)
-- `projects` — project cards (image, tags, description)
-- `education` — degrees / programs
-- `testimonials` — quotes
-- `posts` — blog entries
-- `navLinks` — nav items (labels + anchor hrefs)
+- `profile` - your name, role, email, socials, portrait image URL
+- `aboutParagraphs` - the About copy
+- `skills` - categories + skill levels
+- `experience` - jobs (company, role, bullets, stack)
+- `projects` - project cards (image, tags, description)
+- `education` - degrees / programs
+- `testimonials` - quotes
+- `posts` - blog entries
+- `navLinks` - nav items (labels + anchor hrefs)
 
 Tweak colors & fonts:
 

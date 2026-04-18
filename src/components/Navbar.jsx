@@ -81,7 +81,7 @@ const Navbar = () => {
                 onClick={() => setOpen(false)}
                 className="font-mono text-sm text-inkSoft hover:text-amber"
               >
-                — {l.label}
+                - {l.label}
               </a>
             ))}
             <a

@@ -9,7 +9,7 @@ const Skills = () => {
         <div className="max-w-3xl">
           <SectionLabel index="02" label="skills & stack" />
           <h2 className={`font-serif text-4xl md:text-5xl ${leading.section} text-ink tracking-tight mt-6`}>
-            The tools I reach for —
+            The tools I reach for -
             <span className="italic text-amber"> gently </span>
             opinionated.
           </h2>

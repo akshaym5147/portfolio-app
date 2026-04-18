@@ -24,7 +24,7 @@ const Contact = () => {
       return;
     }
     if (!/^\S+@\S+\.\S+$/.test(form.email)) {
-      toast.error("Hmm — that email doesn’t look right.");
+      toast.error("Hmm - that email doesn’t look right.");
       return;
     }
     setLoading(true);
@@ -54,7 +54,7 @@ const Contact = () => {
           </h2>
           <p className={`mt-5 text-inkSoft ${proseSizes["2xl"]} leading-relaxed max-w-md`}>
             I’m selectively taking on contract & advisory work for the rest of
-            2025. Short notes, long briefs — both welcome.
+            2025. Short notes, long briefs - both welcome.
           </p>
 
           <div className="mt-10 space-y-4">
