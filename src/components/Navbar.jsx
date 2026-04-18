@@ -44,7 +44,7 @@ const Navbar = () => {
             <a
               key={l.label}
               href={l.href}
-              className="font-mono text-[13px] text-inkSoft hover:text-amber transition-colors link-sweep"
+              className={`font-mono ${monoSizes.md} text-inkSoft hover:text-amber transition-colors link-sweep`}
             >
               {l.label}
             </a>

@@ -1,4 +1,4 @@
-import { monoSizes } from "@/lib/tailwindCssMap";
+import { monoSizes, proseSizes, displaySizes, leading, tracking } from "@/lib/tailwindCssMap";
 import { profile, aboutParagraphs } from "../mock";
 import SectionLabel from "./SectionLabel";
 
@@ -11,7 +11,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-14">
         <div className="md:col-span-5">
           <SectionLabel index="01" label="about" />
-          <h2 className="font-serif text-4xl md:text-5xl leading-[1.05] text-ink tracking-tight mt-6">
+          <h2 className={`font-serif text-4xl md:text-5xl ${leading.section} text-ink tracking-tight mt-6`}>
             An engineer who still writes
             <span className="italic text-amber"> by hand </span>
             before the keyboard.
@@ -28,12 +28,12 @@ const About = () => {
         </div>
 
         <div className="md:col-span-7 md:pt-14">
-          <div className="space-y-6 text-inkSoft text-lg leading-[1.75]">
+          <div className={`space-y-6 text-inkSoft text-lg ${leading.prose}`}>
             {aboutParagraphs.map((p, i) => (
               <p key={i}>
                 {i === 0 ? (
                   <>
-                    <span className="float-left font-serif text-[64px] leading-[0.9] pr-3 pt-1 text-amber">
+                    <span className={`float-left font-serif ${displaySizes.dropcap} ${leading.tightest} pr-3 pt-1 text-amber`}>
                       {p.charAt(0)}
                     </span>
                     {p.slice(1)}
@@ -68,10 +68,10 @@ const About = () => {
                 key={c.title}
                 className="rounded-lg border border-line/70 bg-cream px-5 py-4 hover:border-amber/70 transition-colors"
               >
-                <div className={`font-mono ${monoSizes.xs} uppercase tracking-[0.18em] text-amber mb-1`}>
+                <div className={`font-mono ${monoSizes.xs} uppercase ${tracking.label} text-amber mb-1`}>
                   {c.title}
                 </div>
-                <div className="text-ink text-[15px] leading-relaxed">
+                <div className={`text-ink ${proseSizes.lg} leading-relaxed`}>
                   {c.body}
                 </div>
               </div>

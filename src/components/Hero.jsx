@@ -1,7 +1,7 @@
 import { ArrowDownRight, Download, MapPin } from "lucide-react";
 import { profile } from "../mock";
 import { Button } from "./ui/button";
-import { monoSizes } from "@/lib/tailwindCssMap";
+import { monoSizes, headingSizes, leading, tracking } from "@/lib/tailwindCssMap";
 
 const Hero = () => {
   return (
@@ -17,12 +17,12 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage opacity-70" />
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-sage" />
             </span>
-            <span className={`font-mono ${monoSizes.sm} uppercase tracking-[0.16em] text-inkSoft`}>
+            <span className={`font-mono ${monoSizes.sm} uppercase ${tracking.status} text-inkSoft`}>
               available for select work · Q4 2025
             </span>
           </div>
 
-          <h1 className="font-serif text-[54px] leading-[1.02] sm:text-[72px] md:text-[96px] md:leading-[0.98] text-ink tracking-[-0.025em]">
+          <h1 className={`font-serif ${headingSizes.base} ${leading.snug} ${headingSizes.sm} ${headingSizes.lg} md:leading-[0.98] text-ink ${tracking.heading}`}>
             Hello, I’m{" "}
             <span className="italic text-amber">{profile.firstName}</span>.
             <br />
@@ -80,7 +80,7 @@ const Hero = () => {
                 ~/akshay — zsh
               </span>
             </div>
-            <div className="px-5 py-6 font-mono text-[13px] leading-[1.7] text-ink">
+            <div className={`px-5 py-6 font-mono ${monoSizes.md} ${leading.terminal} text-ink`}>
               <div>
                 <span className="text-amber">❯</span> whoami
               </div>
@@ -128,22 +128,13 @@ const Hero = () => {
 
       {/* marquee of tech */}
       <div className="border-t border-line/60 bg-paper/60 overflow-hidden">
-        <div className={`flex marquee-track whitespace-nowrap py-4 font-mono ${monoSizes.sm} uppercase tracking-[0.22em] text-inkSoft`}>
+        <div className={`flex marquee-track whitespace-nowrap py-4 font-mono ${monoSizes.sm} uppercase ${tracking.marquee} text-inkSoft`}>
           {Array.from({ length: 2 }).map((_, k) => (
             <div key={k} className="flex gap-10 pr-10">
               {[
-                "// react",
-                "// typescript",
-                "// fastapi",
-                "// postgres",
-                "// aws",
-                "// terraform",
-                "// redis",
-                "// docker",
-                "// graphql",
-                "// next.js",
-                "// tailwind",
-                "// python"
+                "// react", "// typescript", "// fastapi", "// postgres",
+                "// aws", "// terraform", "// redis", "// docker",
+                "// graphql", "// next.js", "// tailwind", "// python"
               ].map((t) => (
                 <span key={t} className="flex items-center gap-10">
                   <span>{t}</span>

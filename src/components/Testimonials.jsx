@@ -2,6 +2,7 @@ import { useState } from "react";
 import { testimonials } from "../mock";
 import SectionLabel from "./SectionLabel";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import { monoSizes, displaySizes, leading, tracking } from "@/lib/tailwindCssMap";
 
 const Testimonials = () => {
   const [i, setI] = useState(0);
@@ -15,7 +16,7 @@ const Testimonials = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28">
         <div className="max-w-3xl">
           <SectionLabel index="06" label="kind words" />
-          <h2 className="font-serif text-4xl md:text-5xl leading-[1.05] text-ink tracking-tight mt-6">
+          <h2 className={`font-serif text-4xl md:text-5xl ${leading.section} text-ink tracking-tight mt-6`}>
             What folks I’ve built with
             <span className="italic text-amber"> have said</span>.
           </h2>
@@ -24,7 +25,7 @@ const Testimonials = () => {
         <div className="mt-14 grid md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-8 relative rounded-2xl border border-line/70 bg-cream p-8 md:p-12 card-warm">
             <Quote className="absolute top-6 left-6 w-10 h-10 text-amber/30" />
-            <p className="font-serif text-[22px] md:text-[28px] leading-[1.45] text-ink relative z-10">
+            <p className={`font-serif ${displaySizes.testimonial} ${displaySizes.testimonialMd} ${leading.quote} text-ink relative z-10`}>
               “{active.quote}”
             </p>
             <div className="mt-8 flex items-center gap-4">
@@ -33,7 +34,7 @@ const Testimonials = () => {
               </div>
               <div>
                 <div className="font-medium text-ink">{active.name}</div>
-                <div className="font-mono text-[11.5px] uppercase tracking-[0.16em] text-inkSoft">
+                <div className={`font-mono ${monoSizes.xs} uppercase ${tracking.status} text-inkSoft`}>
                   {active.title}
                 </div>
               </div>
@@ -68,7 +69,7 @@ const Testimonials = () => {
               >
                 <ChevronRight className="w-4 h-4" />
               </button>
-              <span className="font-mono text-[12px] text-inkSoft">
+              <span className={`font-mono ${monoSizes.sm} text-inkSoft`}>
                 0{i + 1} / 0{total}
               </span>
             </div>
