@@ -1,3 +1,4 @@
+import { monoSizes } from "@/lib/tailwindCssMap";
 import { experience } from "../mock";
 import SectionLabel from "./SectionLabel";
 import { ArrowUpRight } from "lucide-react";
@@ -42,7 +43,7 @@ const Experience = () => {
                       <span className="text-[14px]">{job.location}</span>
                     </div>
                   </div>
-                  <div className="font-mono text-[12px] uppercase tracking-[0.18em] text-inkSoft">
+                  <div className={`font-mono ${monoSizes.sm} uppercase tracking-[0.18em] text-inkSoft`}>
                     {job.period}
                   </div>
                 </div>
@@ -60,7 +61,7 @@ const Experience = () => {
                   {job.stack.map((s) => (
                     <span
                       key={s}
-                      className="font-mono text-[11px] uppercase tracking-[0.14em] text-inkSoft border border-line rounded-full px-3 py-1 bg-cream"
+                      className={`font-mono ${monoSizes.xs} uppercase tracking-[0.14em] text-inkSoft border border-line rounded-full px-3 py-1 bg-cream`}
                     >
                       {s}
                     </span>

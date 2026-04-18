@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { navLinks, profile } from "../mock";
 import { Button } from "./ui/button";
+import { monoSizes } from "@/lib/tailwindCssMap";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -53,7 +54,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <Button
             asChild
-            className="bg-ink text-cream hover:bg-amber rounded-full px-5 h-10 font-mono text-[12px] tracking-wide shadow-none"
+            className={`bg-ink text-cream hover:bg-amber rounded-full px-5 h-10 font-mono ${monoSizes.sm} tracking-wide shadow-none`}
           >
             <a href="#contact">
               say hello <ArrowUpRight className="w-4 h-4 ml-1" />
@@ -86,7 +87,7 @@ const Navbar = () => {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex items-center justify-center bg-ink text-cream rounded-full h-11 font-mono text-[12px]"
+              className={`mt-2 inline-flex items-center justify-center bg-ink text-cream rounded-full h-11 font-mono ${monoSizes.sm}`}
             >
               say hello <ArrowUpRight className="w-4 h-4 ml-1" />
             </a>

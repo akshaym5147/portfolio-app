@@ -1,3 +1,4 @@
+import { monoSizes } from "@/lib/tailwindCssMap";
 import { profile, aboutParagraphs } from "../mock";
 import SectionLabel from "./SectionLabel";
 
@@ -67,7 +68,7 @@ const About = () => {
                 key={c.title}
                 className="rounded-lg border border-line/70 bg-cream px-5 py-4 hover:border-amber/70 transition-colors"
               >
-                <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-amber mb-1">
+                <div className={`font-mono ${monoSizes.xs} uppercase tracking-[0.18em] text-amber mb-1`}>
                   {c.title}
                 </div>
                 <div className="text-ink text-[15px] leading-relaxed">

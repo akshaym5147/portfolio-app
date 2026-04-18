@@ -1,3 +1,4 @@
+import { monoSizes } from "@/lib/tailwindCssMap";
 import { education } from "../mock";
 import SectionLabel from "./SectionLabel";
 import { GraduationCap } from "lucide-react";
@@ -25,7 +26,7 @@ const Education = () => {
                 <span className="w-10 h-10 rounded-lg grid place-items-center bg-paper text-amber border border-line">
                   <GraduationCap className="w-5 h-5" />
                 </span>
-                <span className="font-mono text-[11px] text-inkSoft">
+                <span className={`font-mono ${monoSizes.xs} text-inkSoft`}>
                   0{i + 1}
                 </span>
               </div>
@@ -33,7 +34,7 @@ const Education = () => {
                 {e.school}
               </div>
               <div className="mt-1 text-inkSoft text-[14.5px]">{e.degree}</div>
-              <div className="mt-4 font-mono text-[11px] uppercase tracking-[0.16em] text-amber">
+              <div className={`mt-4 font-mono ${monoSizes.xs} uppercase tracking-[0.16em] text-amber`}>
                 {e.period} · {e.grade}
               </div>
               <p className="mt-4 text-inkSoft text-[14.5px] leading-relaxed">

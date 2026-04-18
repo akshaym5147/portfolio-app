@@ -1,3 +1,4 @@
+import { monoSizes } from "@/lib/tailwindCssMap";
 import { skills } from "../mock";
 import SectionLabel from "./SectionLabel";
 
@@ -28,7 +29,7 @@ const Skills = () => {
                 <div className="font-serif text-xl text-ink">
                   {group.category}
                 </div>
-                <div className="font-mono text-[11px] text-amber">
+                <div className={`font-mono ${monoSizes.xs} text-amber`}>
                   0{gi + 1}
                 </div>
               </div>
@@ -37,7 +38,7 @@ const Skills = () => {
                   <div key={s.name}>
                     <div className="flex items-baseline justify-between">
                       <span className="text-ink text-[14px]">{s.name}</span>
-                      <span className="font-mono text-[11px] text-inkSoft">
+                      <span className={`font-mono ${monoSizes.xs} text-inkSoft`}>
                         {s.level}
                       </span>
                     </div>

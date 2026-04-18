@@ -2,6 +2,7 @@ import { useState } from "react";
 import { projects } from "../mock";
 import SectionLabel from "./SectionLabel";
 import { ArrowUpRight } from "lucide-react";
+import { monoSizes } from "@/lib/tailwindCssMap";
 
 const filters = ["all", "Next.js", "React", "Python", "Mobile", "Open-source"];
 
@@ -31,7 +32,7 @@ const Projects = () => {
               <button
                 key={f}
                 onClick={() => setActive(f)}
-                className={`font-mono text-[11px] uppercase tracking-[0.18em] px-3 py-1.5 rounded-full border transition-colors ${
+                className={`font-mono ${monoSizes.xs} uppercase tracking-[0.18em] px-3 py-1.5 rounded-full border transition-colors ${
                   active === f
                     ? "bg-ink text-cream border-ink"
                     : "bg-cream text-inkSoft border-line hover:border-amber hover:text-amber"
@@ -65,7 +66,7 @@ const Projects = () => {
                     className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 font-mono text-[11px] bg-cream/90 text-ink rounded-full px-2.5 py-1">
+                  <span className={`absolute top-4 left-4 font-mono ${monoSizes.xs} bg-cream/90 text-ink rounded-full px-2.5 py-1`}>
                     {p.year}
                   </span>
                 </div>
