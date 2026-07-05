@@ -35,7 +35,7 @@ export const aboutParagraphs = [
   "Hey there - I'm Akshay. I'm a full-stack engineer who cares deeply about owning what I ship - from the database schema to the last pixel on screen. I spend my days between React components, Java microservices, and the kind of system design decisions that quietly keep things running at 99% uptime.",
   "I've spent the last seven years building platforms across edtech and fleet management - shipping real-time dashboards, serverless workflows, and component libraries that outlive the sprint they were born in. I care about performance, clean APIs, and writing documentation that actually helps the next engineer.",
   "When I'm not coding, you'll find me exploring new tech, contributing to open source, or debugging something that definitely wasn't broken yesterday."
-  
+
   // "Hey there - I'm Akshay. I'm a full-stack engineer who cares deeply about the craft of making software that feels lived-in. I spend my days between React components, Postgres queries, and the kind of design details most people never notice (but always feel).",
   // "I've spent the last six years building tools for healthcare, fintech, and indie creators. I care about performance budgets, honest error messages, and shipping small improvements on a Tuesday afternoon.",
   // "When I'm not coding, you'll find me roasting coffee, reading a worn-out copy of 'The Pragmatic Programmer', or over-engineering my home automation setup."
@@ -53,7 +53,7 @@ export const skills = [
     gridSpan: "lg:col-span-2",
     items: [
       { name: "React" },
-      { name: "Next.js" },
+      // { name: "Next.js" },
       { name: "React Native" },
       { name: "JavaScript" },
       { name: "TypeScript" },
@@ -153,34 +153,33 @@ export const experience = [
     period: "2022 - Present",
     location: "Remote · Berlin",
     bullets: [
-  "Serve as technical anchor for the team pod, unblocking engineers and resolving critical technical challenges",
-  "Built WCAG-compliant, cross-browser React/TypeScript/Redux features for a high-concurrency real-time education platform",
-  "Developed Java/Spring Boot microservices and AWS Lambda functions for serverless, event-driven workflows",
-  "Designed a retry mechanism that improved data accuracy for 1,000+ users and reduced manual effort by 35%",
-  "Integrated OpenSearch for content search across question banks, including indexing strategy and query tuning",
-  "Extended existing APIs to accept and propagate page-level settings, supporting a platform-wide event system on page load",
-  "Optimised assessment submission performance using Reactive Java and SQS, reducing submission time from 2 minutes to 1.3 seconds",
-  "Optimised frontend performance using React Query and backend caching, reducing redundant API calls across the application",
-  "Resolved 13+ critical CVE vulnerabilities by auditing and upgrading vulnerable dependencies across the platform",
-  "Extended backend APIs to support AI-generated assessment summaries, enabling teachers to quickly review student performance",
-  "Led frontend architecture, sprint planning, and design reviews while mentoring 6+ engineers",
-  "Presented technical decisions to clients and leadership, improving compliance by 15% and maintaining 99% uptime",
-  "Leveraged Claude and GitHub Copilot during development to improve delivery speed and code quality",
-  "Led application migration to a new CI/CD setup on AWS, ensuring zero downtime and continuity across deployment changes",
+      "Serve as technical anchor for the team pod, unblocking engineers and resolving critical technical challenges",
+      "Built WCAG-compliant, cross-browser React/TypeScript/Redux features for a high-concurrency real-time education platform",
+      "Designed and led development of scoring for drag-drop and matching components, enabling accurate scoring for 50,000+ student attempts.",
+      "Developed Java/Spring Boot microservices and AWS Lambda functions for serverless, event-driven workflows",
+      "Designed a retry mechanism that improved data accuracy for 1,000+ users and reduced manual effort by 35%",
+      "Integrated OpenSearch for content search across question banks, including indexing strategy and query tuning",
+      "Optimised assessment submission performance using Reactive Java and SQS, reducing submission time from 2 minutes to 1.3 seconds",
+      "Resolved 13+ critical CVE vulnerabilities by auditing and upgrading vulnerable dependencies across the platform",
+      "Led frontend architecture, sprint planning, and design reviews while mentoring 6+ engineers",
+      "Led application migration to a new CI/CD setup on AWS, ensuring zero downtime and continuity across deployment changes",
+      "Presented technical decisions to clients and leadership, improving compliance by 15% and maintaining 99% uptime",
+      "Leveraged Claude and GitHub Copilot during development to improve delivery speed and code quality",
     ],
-    stack: ["Next.js", "FastAPI", "Postgres", "AWS", "Terraform"]
+    stack: [] 
   },
   {
     company: "LearningMate",
     role: "Software Engineer",
     period: "2021 - 2022",
-    location: "Bengaluru",
+    location: "Mumbai",
     bullets: [
-      "Built the core authoring experience used by 40k+ creators to publish newsletters.",
-      "Shipped a collaborative block editor with CRDTs; cut merge-conflict reports by 92%.",
-      "Owned billing & Stripe integration end-to-end, including dunning flows."
+      "Built the core authoring experience used by 40k+ creators to publish assessments.",
+      "Built per-question feedback with rich text/media support, reducing student doubt queries by 70%.",
+      "Integrated New Relic and Grafana dashboards, enabling proactive error monitoring for a previously untraceable micro-frontend.",
+      "Reduced bundle size by 38% (7MB→4.3MB) and nearly halved page load time via lazy loading, and code-splitting."
     ],
-    stack: ["React", "Node.js", "GraphQL", "Redis", "Stripe"]
+    stack: [],
   },
   {
     company: "Sankey solutions",

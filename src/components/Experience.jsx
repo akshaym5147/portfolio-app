@@ -10,14 +10,10 @@ const Experience = () => {
         <div className="md:col-span-4">
           <SectionLabel index="03" label="experience" />
           <h2 className="font-serif text-4xl md:text-5xl leading-[1.05] text-ink tracking-tight mt-6">
-            Six years,
+            Seven years,
             <span className="italic text-amber"> three teams</span>, a lot of
             late-night commits.
           </h2>
-          <p className="mt-5 text-inkSoft text-[16px] leading-relaxed">
-            I tend to stay. I like getting past the interesting first year and
-            into the work where real systems emerge.
-          </p>
         </div>
 
         <div className="md:col-span-8 relative">
