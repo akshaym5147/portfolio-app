@@ -47,63 +47,133 @@ export const aboutQuickOverview = {
   offHours: 'Building side projects, exploring new tech, and breaking things on purpose.'
 }
 
-
 export const skills = [
   {
     category: "Frontend",
+    gridSpan: "lg:col-span-2",
     items: [
-      { name: "React / Next.js", level: 95 },
-      { name: "TypeScript", level: 92 },
-      { name: "Tailwind / CSS", level: 90 },
-      { name: "Framer Motion", level: 78 }
+      { name: "React" },
+      { name: "Next.js" },
+      { name: "React Native" },
+      { name: "JavaScript" },
+      { name: "TypeScript" },
+      { name: "HTML5" },
+      { name: "CSS3" },
+      { name: "SCSS" },
+      { name: "Tailwind CSS" },
+      { name: "Redux" },
+      { name: "Redux Thunk" },
+      { name: "React Query" },
+      { name: "Storybook" },
+      { name: "D3.js" },
+      { name: "Vite" },
+      { name: "Webpack" },
+      { name: "Babel" },
+      { name: "Turborepo" }
     ]
   },
   {
     category: "Backend",
+    gridSpan: "lg:col-span-2",
     items: [
-      { name: "Node.js / Express", level: 90 },
-      { name: "Python / FastAPI", level: 88 },
-      { name: "PostgreSQL", level: 85 },
-      { name: "Redis / Queues", level: 75 }
+      { name: "Java" },
+      { name: "Spring Boot" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "GraphQL" },
+      { name: "REST APIs" },
+      { name: "Microservices" },
+      { name: "Swagger / OpenAPI" }
+    ]
+  },
+  {
+    category: "Databases & Caching",
+    items: [
+      { name: "MySQL" },
+      { name: "PostgreSQL" },
+      { name: "DynamoDB" },
+      { name: "Redis" }
     ]
   },
   {
     category: "Cloud & DevOps",
+    gridSpan: "lg:col-span-2",
     items: [
-      { name: "AWS (Lambda, S3, RDS)", level: 82 },
-      { name: "Docker / K8s", level: 78 },
-      { name: "GitHub Actions", level: 86 },
-      { name: "Terraform", level: 70 }
+      { name: "AWS (S3, CloudFront, IAM, Route 53, Lambda)" },
+      { name: "Docker" },
+      { name: "Kubernetes" },
+      { name: "Git" },
+      { name: "GitHub Actions" },
+      { name: "Jenkins" },
+      { name: "CI/CD" }
     ]
   },
   {
-    category: "Craft",
+    category: "Search & Observability",
+
     items: [
-      { name: "System design", level: 85 },
-      { name: "API design", level: 90 },
-      { name: "Testing (Jest, Pytest)", level: 84 },
-      { name: "Accessibility", level: 80 }
+      { name: "Elasticsearch" },
+      { name: "OpenSearch" },
+      { name: "Grafana" },
+      { name: "New Relic" },
+      { name: "Sentry" }
+    ]
+  },
+  {
+    category: "Testing",
+    gridSpan: "lg:col-span-2",
+    items: [
+      { name: "Jest" },
+      { name: "React Testing Library" },
+      { name: "Enzyme" },
+      { name: "Cypress" },
+      { name: "Playwright" },
+      { name: "Applitools" }
+    ]
+  },
+  {
+    category: "Engineering Practices",
+    gridSpan: "lg:col-span-2",
+    items: [
+      { name: "System Design" },
+      { name: "API Design" },
+      { name: "Data Structures & Algorithms" },
+      { name: "Accessibility (WCAG)" },
+      { name: "Agile / Scrum" },
+      { name: "GitHub Copilot" },
+      { name: "Claude Code" }
     ]
   }
 ];
 
 export const experience = [
   {
-    company: "Lumen Health",
+    company: "LearningMate",
     role: "Senior Full-Stack Engineer",
-    period: "2023 - Present",
+    period: "2022 - Present",
     location: "Remote · Berlin",
     bullets: [
-      "Led rewrite of the patient intake platform - reduced median load time from 4.8s to 0.9s.",
-      "Designed an event-driven audit pipeline handling 1.2M events/day on AWS Kinesis + Lambda.",
-      "Mentored 5 engineers; introduced a lightweight RFC process adopted org-wide."
+  "Serve as technical anchor for the team pod, unblocking engineers and resolving critical technical challenges",
+  "Built WCAG-compliant, cross-browser React/TypeScript/Redux features for a high-concurrency real-time education platform",
+  "Developed Java/Spring Boot microservices and AWS Lambda functions for serverless, event-driven workflows",
+  "Designed a retry mechanism that improved data accuracy for 1,000+ users and reduced manual effort by 35%",
+  "Integrated OpenSearch for content search across question banks, including indexing strategy and query tuning",
+  "Extended existing APIs to accept and propagate page-level settings, supporting a platform-wide event system on page load",
+  "Optimised assessment submission performance using Reactive Java and SQS, reducing submission time from 2 minutes to 1.3 seconds",
+  "Optimised frontend performance using React Query and backend caching, reducing redundant API calls across the application",
+  "Resolved 13+ critical CVE vulnerabilities by auditing and upgrading vulnerable dependencies across the platform",
+  "Extended backend APIs to support AI-generated assessment summaries, enabling teachers to quickly review student performance",
+  "Led frontend architecture, sprint planning, and design reviews while mentoring 6+ engineers",
+  "Presented technical decisions to clients and leadership, improving compliance by 15% and maintaining 99% uptime",
+  "Leveraged Claude and GitHub Copilot during development to improve delivery speed and code quality",
+  "Led application migration to a new CI/CD setup on AWS, ensuring zero downtime and continuity across deployment changes",
     ],
     stack: ["Next.js", "FastAPI", "Postgres", "AWS", "Terraform"]
   },
   {
-    company: "Mosaic Labs",
-    role: "Full-Stack Engineer",
-    period: "2021 - 2023",
+    company: "LearningMate",
+    role: "Software Engineer",
+    period: "2021 - 2022",
     location: "Bengaluru",
     bullets: [
       "Built the core authoring experience used by 40k+ creators to publish newsletters.",
@@ -113,7 +183,7 @@ export const experience = [
     stack: ["React", "Node.js", "GraphQL", "Redis", "Stripe"]
   },
   {
-    company: "Finch & Fig",
+    company: "Sankey solutions",
     role: "Software Engineer",
     period: "2019 - 2021",
     location: "Bengaluru",

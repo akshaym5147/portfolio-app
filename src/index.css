@@ -51,6 +51,16 @@ code, .font-mono {
   }
 }
 
+.skill-tag {
+    transition: all 0.2s ease;
+}
+.skill-tag:hover {
+    background-color: #a8441e;
+    color: #ffffff;
+    border-color: #a8441e;
+}
+
+
 @layer base {
   * { @apply border-border; }
   body { @apply bg-background text-foreground; }
