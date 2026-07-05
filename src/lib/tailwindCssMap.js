@@ -1,4 +1,4 @@
-// Font sizes — mono UI elements
+// Font sizes - mono UI elements
 export const monoSizes = {
   xxs: "text-[10.5px]", // Projects: tag pills
   xs: "text-[11px]",    // terminal header, stats label, footer, contact labels, blog tag
@@ -6,7 +6,7 @@ export const monoSizes = {
   md: "text-[13px]",    // terminal body, navbar links
 };
 
-// Font sizes — body/prose text
+// Font sizes - body/prose text
 export const proseSizes = {
   sm: "text-[14px]",      // experience location, skills item
   md: "text-[14.5px]",    // education degree/details, blog excerpt
@@ -16,14 +16,15 @@ export const proseSizes = {
   "3xl": "text-[17px]",   // skills intro paragraph
 };
 
-// Font sizes — hero heading (responsive)
+// Font sizes - hero heading (responsive)
 export const headingSizes = {
   base: "text-[54px]",
+  md: "text-[65px]",
   sm: "sm:text-[72px]",
   lg: "md:text-[96px]",
 };
 
-// Font sizes — display/accent
+// Font sizes - display/accent
 export const displaySizes = {
   dropcap: "text-[64px]",        // About: drop cap letter
   testimonial: "text-[22px]",    // Testimonials/Blog: quote/title

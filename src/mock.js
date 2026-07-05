@@ -1,14 +1,13 @@
-// Mock data for Akshay's Portfolio — Warm Developer Vibe
+// Mock data for Akshay's Portfolio - Warm Developer Vibe
 
 export const profile = {
   name: "Akshay",
   firstName: "Akshay",
-  lastName: "Sharma",
+  lastName: "Muge",
   role: "Full-Stack Engineer",
-  tagline: "I build thoughtful, warm software — from pixel to pipeline.",
-  location: "Bengaluru, India",
-  email: "akshay@akshay.dev",
-  phone: "+91 98765 43210",
+  location: "Mumbai, India",
+  email: "akshaymuge51@gmail.com",
+  phone: "+91 7083325829",
   resumeUrl: "#",
   portrait:
     "https://images.unsplash.com/photo-1752738372136-2602aaafdcb7?auto=format&fit=crop&w=900&q=80",
@@ -17,79 +16,164 @@ export const profile = {
   socials: [
     { label: "GitHub", href: "https://github.com", handle: "@akshay-dev" },
     { label: "LinkedIn", href: "https://linkedin.com", handle: "in/akshay" },
-    { label: "Twitter", href: "https://twitter.com", handle: "@akshay_codes" },
-    { label: "Read.cv", href: "https://read.cv", handle: "akshay" }
   ],
   stats: [
-    { label: "Years building", value: "6+" },
-    { label: "Shipped products", value: "24" },
-    { label: "Open-source stars", value: "3.2k" },
-    { label: "Cups of chai", value: "∞" }
+    { label: "Years building", value: "7+" },
+    { label: "Shipped products", value: "5+" },
+    // { label: "Open-source stars", value: "0k" },
+    // { label: "Cups of chai", value: "∞" }
   ]
 };
 
+// export const aboutParagraphs = [
+//   "Hey there - I'm Akshay. I'm a full-stack engineer who cares deeply about the craft of making software that feels lived-in. I spend my days between React components, Postgres queries, and the kind of design details most people never notice (but always feel).",
+//   "I've spent the last six years building tools for healthcare, fintech, and indie creators. I care about performance budgets, honest error messages, and shipping small improvements on a Tuesday afternoon.",
+//   "When I'm not coding, you'll find me roasting coffee, reading a worn-out copy of 'The Pragmatic Programmer', or over-engineering my home automation setup."
+// ];
+
 export const aboutParagraphs = [
-  "Hey there — I'm Akshay. I'm a full-stack engineer who cares deeply about the craft of making software that feels lived-in. I spend my days between React components, Postgres queries, and the kind of design details most people never notice (but always feel).",
-  "I've spent the last six years building tools for healthcare, fintech, and indie creators. I care about performance budgets, honest error messages, and shipping small improvements on a Tuesday afternoon.",
-  "When I'm not coding, you'll find me roasting coffee, reading a worn-out copy of 'The Pragmatic Programmer', or over-engineering my home automation setup."
+  "Hey there - I'm Akshay. I'm a full-stack engineer who cares deeply about owning what I ship - from the database schema to the last pixel on screen. I spend my days between React components, Java microservices, and the kind of system design decisions that quietly keep things running at 99% uptime.",
+  "I've spent the last seven years building platforms across edtech and fleet management - shipping real-time dashboards, serverless workflows, and component libraries that outlive the sprint they were born in. I care about performance, clean APIs, and writing documentation that actually helps the next engineer.",
+  "When I'm not coding, you'll find me exploring new tech, contributing to open source, or debugging something that definitely wasn't broken yesterday."
+  
+  // "Hey there - I'm Akshay. I'm a full-stack engineer who cares deeply about the craft of making software that feels lived-in. I spend my days between React components, Postgres queries, and the kind of design details most people never notice (but always feel).",
+  // "I've spent the last six years building tools for healthcare, fintech, and indie creators. I care about performance budgets, honest error messages, and shipping small improvements on a Tuesday afternoon.",
+  // "When I'm not coding, you'll find me roasting coffee, reading a worn-out copy of 'The Pragmatic Programmer', or over-engineering my home automation setup."
 ];
+
+export const aboutQuickOverview = {
+  currently: 'Senior engineer at LearningMate, buildng the edtech platform.',
+  previously: 'Sankey Solutions - fast-paced startup.',
+  offHours: 'Building side projects, exploring new tech, and breaking things on purpose.'
+}
 
 export const skills = [
   {
     category: "Frontend",
+    gridSpan: "lg:col-span-2",
     items: [
-      { name: "React / Next.js", level: 95 },
-      { name: "TypeScript", level: 92 },
-      { name: "Tailwind / CSS", level: 90 },
-      { name: "Framer Motion", level: 78 }
+      { name: "React" },
+      { name: "Next.js" },
+      { name: "React Native" },
+      { name: "JavaScript" },
+      { name: "TypeScript" },
+      { name: "HTML5" },
+      { name: "CSS3" },
+      { name: "SCSS" },
+      { name: "Tailwind CSS" },
+      { name: "Redux" },
+      { name: "Redux Thunk" },
+      { name: "React Query" },
+      { name: "Storybook" },
+      { name: "D3.js" },
+      { name: "Vite" },
+      { name: "Webpack" },
+      { name: "Babel" },
+      { name: "Turborepo" }
     ]
   },
   {
     category: "Backend",
+    gridSpan: "lg:col-span-2",
     items: [
-      { name: "Node.js / Express", level: 90 },
-      { name: "Python / FastAPI", level: 88 },
-      { name: "PostgreSQL", level: 85 },
-      { name: "Redis / Queues", level: 75 }
+      { name: "Java" },
+      { name: "Spring Boot" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "GraphQL" },
+      { name: "REST APIs" },
+      { name: "Microservices" },
+      { name: "Swagger / OpenAPI" }
+    ]
+  },
+  {
+    category: "Databases & Caching",
+    items: [
+      { name: "MySQL" },
+      { name: "PostgreSQL" },
+      { name: "DynamoDB" },
+      { name: "Redis" }
     ]
   },
   {
     category: "Cloud & DevOps",
+    gridSpan: "lg:col-span-2",
     items: [
-      { name: "AWS (Lambda, S3, RDS)", level: 82 },
-      { name: "Docker / K8s", level: 78 },
-      { name: "GitHub Actions", level: 86 },
-      { name: "Terraform", level: 70 }
+      { name: "AWS (S3, CloudFront, IAM, Route 53, Lambda)" },
+      { name: "Docker" },
+      { name: "Kubernetes" },
+      { name: "Git" },
+      { name: "GitHub Actions" },
+      { name: "Jenkins" },
+      { name: "CI/CD" }
     ]
   },
   {
-    category: "Craft",
+    category: "Search & Observability",
+
     items: [
-      { name: "System design", level: 85 },
-      { name: "API design", level: 90 },
-      { name: "Testing (Jest, Pytest)", level: 84 },
-      { name: "Accessibility", level: 80 }
+      { name: "Elasticsearch" },
+      { name: "OpenSearch" },
+      { name: "Grafana" },
+      { name: "New Relic" },
+      { name: "Sentry" }
+    ]
+  },
+  {
+    category: "Testing",
+    gridSpan: "lg:col-span-2",
+    items: [
+      { name: "Jest" },
+      { name: "React Testing Library" },
+      { name: "Enzyme" },
+      { name: "Cypress" },
+      { name: "Playwright" },
+      { name: "Applitools" }
+    ]
+  },
+  {
+    category: "Engineering Practices",
+    gridSpan: "lg:col-span-2",
+    items: [
+      { name: "System Design" },
+      { name: "API Design" },
+      { name: "Data Structures & Algorithms" },
+      { name: "Accessibility (WCAG)" },
+      { name: "Agile / Scrum" },
+      { name: "GitHub Copilot" },
+      { name: "Claude Code" }
     ]
   }
 ];
 
 export const experience = [
   {
-    company: "Lumen Health",
+    company: "LearningMate",
     role: "Senior Full-Stack Engineer",
-    period: "2023 — Present",
+    period: "2022 - Present",
     location: "Remote · Berlin",
     bullets: [
-      "Led rewrite of the patient intake platform — reduced median load time from 4.8s to 0.9s.",
-      "Designed an event-driven audit pipeline handling 1.2M events/day on AWS Kinesis + Lambda.",
-      "Mentored 5 engineers; introduced a lightweight RFC process adopted org-wide."
+  "Serve as technical anchor for the team pod, unblocking engineers and resolving critical technical challenges",
+  "Built WCAG-compliant, cross-browser React/TypeScript/Redux features for a high-concurrency real-time education platform",
+  "Developed Java/Spring Boot microservices and AWS Lambda functions for serverless, event-driven workflows",
+  "Designed a retry mechanism that improved data accuracy for 1,000+ users and reduced manual effort by 35%",
+  "Integrated OpenSearch for content search across question banks, including indexing strategy and query tuning",
+  "Extended existing APIs to accept and propagate page-level settings, supporting a platform-wide event system on page load",
+  "Optimised assessment submission performance using Reactive Java and SQS, reducing submission time from 2 minutes to 1.3 seconds",
+  "Optimised frontend performance using React Query and backend caching, reducing redundant API calls across the application",
+  "Resolved 13+ critical CVE vulnerabilities by auditing and upgrading vulnerable dependencies across the platform",
+  "Extended backend APIs to support AI-generated assessment summaries, enabling teachers to quickly review student performance",
+  "Led frontend architecture, sprint planning, and design reviews while mentoring 6+ engineers",
+  "Presented technical decisions to clients and leadership, improving compliance by 15% and maintaining 99% uptime",
+  "Leveraged Claude and GitHub Copilot during development to improve delivery speed and code quality",
+  "Led application migration to a new CI/CD setup on AWS, ensuring zero downtime and continuity across deployment changes",
     ],
     stack: ["Next.js", "FastAPI", "Postgres", "AWS", "Terraform"]
   },
   {
-    company: "Mosaic Labs",
-    role: "Full-Stack Engineer",
-    period: "2021 — 2023",
+    company: "LearningMate",
+    role: "Software Engineer",
+    period: "2021 - 2022",
     location: "Bengaluru",
     bullets: [
       "Built the core authoring experience used by 40k+ creators to publish newsletters.",
@@ -99,9 +183,9 @@ export const experience = [
     stack: ["React", "Node.js", "GraphQL", "Redis", "Stripe"]
   },
   {
-    company: "Finch & Fig",
+    company: "Sankey solutions",
     role: "Software Engineer",
-    period: "2019 — 2021",
+    period: "2019 - 2021",
     location: "Bengaluru",
     bullets: [
       "Built an internal low-code tool that saved ops team ~30 hours / week.",
@@ -166,7 +250,7 @@ export const projects = [
     title: "Kettle",
     subtitle: "A warm chat client for teams.",
     description:
-      "An opinionated Slack alternative built around focus, threads, and async-first rituals. Side project — 500 beta users.",
+      "An opinionated Slack alternative built around focus, threads, and async-first rituals. Side project - 500 beta users.",
     tags: ["Next.js", "WebSockets", "Design"],
     image:
       "https://images.unsplash.com/photo-1633250391894-397930e3f5f2?auto=format&fit=crop&w=900&q=80",
@@ -191,7 +275,7 @@ export const education = [
   {
     school: "BITS Pilani",
     degree: "B.E., Computer Science",
-    period: "2015 — 2019",
+    period: "2015 - 2019",
     details:
       "Graduated with distinction. Undergraduate thesis on distributed consensus; published at an ACM student workshop.",
     grade: "CGPA 9.1 / 10"
@@ -217,7 +301,7 @@ export const education = [
 export const testimonials = [
   {
     quote:
-      "Akshay is the rarest kind of engineer — one who cares equally about the query plan and the empty state illustration. Every review made the product better.",
+      "Akshay is the rarest kind of engineer - one who cares equally about the query plan and the empty state illustration. Every review made the product better.",
     name: "Priya Menon",
     title: "VP Engineering, Lumen Health"
   },
@@ -246,7 +330,7 @@ export const posts = [
     slug: "slow-software",
     title: "In praise of slow software",
     excerpt:
-      "On building tools that respect the reader's time — and why 'boring' is usually the right call.",
+      "On building tools that respect the reader's time - and why 'boring' is usually the right call.",
     date: "Jun 14, 2025",
     readMins: 7,
     tag: "Essay"
@@ -255,7 +339,7 @@ export const posts = [
     slug: "postgres-indexes",
     title: "The four Postgres indexes I reach for first",
     excerpt:
-      "A field-tested guide to B-tree, GIN, BRIN and partial indexes — with query plans that actually helped me in production.",
+      "A field-tested guide to B-tree, GIN, BRIN and partial indexes - with query plans that actually helped me in production.",
     date: "Apr 02, 2025",
     readMins: 11,
     tag: "Engineering"
@@ -275,7 +359,7 @@ export const navLinks = [
   { label: "about", href: "#about" },
   { label: "skills", href: "#skills" },
   { label: "work", href: "#experience" },
-  { label: "projects", href: "#projects" },
-  { label: "writing", href: "#blog" },
+  // { label: "projects", href: "#projects" },
+  // { label: "writing", href: "#blog" },
   { label: "contact", href: "#contact" }
 ];

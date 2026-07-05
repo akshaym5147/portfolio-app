@@ -1,5 +1,5 @@
 import { monoSizes, proseSizes, displaySizes, leading, tracking } from "@/lib/tailwindCssMap";
-import { profile, aboutParagraphs } from "../mock";
+import { profile, aboutParagraphs, aboutQuickOverview } from "../mock";
 import SectionLabel from "./SectionLabel";
 
 const About = () => {
@@ -12,15 +12,15 @@ const About = () => {
         <div className="md:col-span-5">
           <SectionLabel index="01" label="about" />
           <h2 className={`font-serif text-4xl md:text-5xl ${leading.section} text-ink tracking-tight mt-6`}>
-            An engineer who still writes
-            <span className="italic text-amber"> by hand </span>
-            before the keyboard.
+            An engineer who owns
+            <span className="italic text-amber"> the problem, </span>
+            not just the ticket.
           </h2>
 
           <div className="mt-8 rounded-xl overflow-hidden border border-line/70 card-warm">
             <img
               src={profile.portrait}
-              alt={`${profile.name} — ${profile.role}`}
+              alt={`${profile.name} - ${profile.role}`}
               className="w-full h-[360px] object-cover"
               loading="lazy"
             />
@@ -49,19 +49,15 @@ const About = () => {
             {[
               {
                 title: "Currently",
-                body: "Senior engineer at Lumen Health, leading the patient-facing platform."
+                body: aboutQuickOverview['currently']
               },
               {
                 title: "Previously",
-                body: "Mosaic Labs, Finch & Fig, plus a Winter ’22 at the Recurse Center."
-              },
-              {
-                title: "Writing",
-                body: "Essays on slow software, Postgres and warm interfaces."
+                body: aboutQuickOverview['previously']
               },
               {
                 title: "Off-hours",
-                body: "Home-roasting coffee, Tamil literature, over-engineering my garden."
+                body: aboutQuickOverview['offHours']
               }
             ].map((c) => (
               <div

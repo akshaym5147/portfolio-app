@@ -16,7 +16,7 @@ const Footer = () => {
               <span className="italic text-amberSoft">{profile.email}</span>
             </h3>
             <p className="mt-6 text-cream/70 max-w-md leading-relaxed">
-              Drop a line — I reply to every message within a day or two. No
+              Drop a line - I reply to every message within a day or two. No
               cold pitches, please.
             </p>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                     className="text-cream/80 hover:text-amberSoft transition-colors"
                   >
                     {s.label}{" "}
-                    <span className="text-cream/40">— {s.handle}</span>
+                    <span className="text-cream/40">- {s.handle}</span>
                   </a>
                 </li>
               ))}
