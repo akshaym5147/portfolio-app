@@ -36,7 +36,7 @@ const Skills = () => {
               <div className="mt-6 flex flex-wrap gap-3">
                 {group.items.map((s) => (
                   <Fragment key={s.name}>
-                    <span  class={`skill-tag px-2 py-2 border border-outline rounded cursor-default ${proseSizes.sm}`}>{s.name}</span>
+                    <span  class={`skill-tag px-2 py-2 border border-outline rounded ${proseSizes.sm}`}>{s.name}</span>
                   </Fragment>
                   // <div key={s.name}>
                   //   <div className="flex items-baseline justify-between">

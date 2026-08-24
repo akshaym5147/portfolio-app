@@ -12,15 +12,17 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
+import CustomCursor from "./components/Customcursor";
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-cream text-ink antialiased selection:bg-amber/30 selection:text-ink">
       <div className="grain-overlay" aria-hidden />
+      <CustomCursor />
       <Navbar />
       <main>
         <Hero />
-        <About />
+        {/* <About /> */}
         <Skills />
         <Experience />
         {/* <Projects /> */}

@@ -69,7 +69,8 @@ export const skills = [
       { name: "Vite" },
       { name: "Webpack" },
       { name: "Babel" },
-      { name: "Turborepo" }
+      { name: "Turborepo" },
+
     ]
   },
   {
@@ -153,20 +154,34 @@ export const experience = [
     period: "2022 - Present",
     location: "Remote · Berlin",
     bullets: [
-      "Serve as technical anchor for the team pod, unblocking engineers and resolving critical technical challenges",
-      "Built WCAG-compliant, cross-browser React/TypeScript/Redux features for a high-concurrency real-time education platform",
-      "Designed and led development of scoring for drag-drop and matching components, enabling accurate scoring for 50,000+ student attempts.",
-      "Developed Java/Spring Boot microservices and AWS Lambda functions for serverless, event-driven workflows",
-      "Designed a retry mechanism that improved data accuracy for 1,000+ users and reduced manual effort by 35%",
-      "Integrated OpenSearch for content search across question banks, including indexing strategy and query tuning",
-      "Optimised assessment submission performance using Reactive Java and SQS, reducing submission time from 2 minutes to 1.3 seconds",
-      "Resolved 13+ critical CVE vulnerabilities by auditing and upgrading vulnerable dependencies across the platform",
-      "Led frontend architecture, sprint planning, and design reviews while mentoring 6+ engineers",
-      "Led application migration to a new CI/CD setup on AWS, ensuring zero downtime and continuity across deployment changes",
-      "Presented technical decisions to clients and leadership, improving compliance by 15% and maintaining 99% uptime",
-      "Leveraged Claude and GitHub Copilot during development to improve delivery speed and code quality",
+      "Led frontend architecture and design reviews as technical anchor for a 6-engineer team, mentoring engineers and unblocking critical technical challenges on a high-concurrency real-time education platform.",
+      "Architected WCAG 2.1-compliant, cross-browser features in React, TypeScript, and Redux - resolving accessibility gaps across varying US school-district compliance requirements.",
+      "Built the core assessment component library (questions, scoring UI, feedback flows) consumed across multiple internal applications.",
+      "Designed and led development of the assessment scoring and feedback flow, enabling accurate scoring across 100,000+ student attempts and driving higher product interaction.",
+      "Built an end-to-end file-upload feature - a Java-based microservice on AWS S3, SQS, and Lambda paired with a frontend component to render uploaded HTML content - powering interactive student sessions.",
+      "Built an end-to-end event-tracking pipeline - frontend instrumentation capturing critical user activity, stored in Snowflake and indexed in OpenSearch - plus a web app to categorize activity by product criteria for analytics.",
+      "Resolved 25+ critical CVE vulnerabilities by auditing and upgrading vulnerable frontend dependencies across the platform.",
+      "Designed a retry mechanism in Java on AWS Lambda that moved scoring to an async background process, improving data accuracy and cutting manual score-verification effort by 35%.",
+      "Optimized assessment submission performance, cutting submission time from 1.3 minutes to ~1 second.",
+      "Migrated micro-frontend apps into a monorepo using Turborepo, streamlining builds and eliminating duplicate package publishing - reducing infra cost by 30% and removing the overhead of maintaining separate Node/Webpack versions per app.",
+      "Supported on-call rotation to troubleshoot and resolve production issues.",
+      "Presented technical decisions to clients and leadership, improving compliance by 15% and maintaining 99% uptime.",
+      "Leveraged Claude and GitHub Copilot throughout the SDLC to improve delivery speed and code quality, and built internal tooling to automate the release process."
+
+      // "Serve as technical anchor for the team pod, unblocking engineers and resolving critical technical challenges",
+      // "Built WCAG-compliant, cross-browser React/TypeScript/Redux features for a high-concurrency real-time education platform",
+      // "Designed and led development of scoring for drag-drop and matching components, enabling accurate scoring for 50,000+ student attempts.",
+      // "Developed Java/Spring Boot microservices and AWS Lambda functions for serverless, event-driven workflows",
+      // "Designed a retry mechanism that improved data accuracy for 1,000+ users and reduced manual effort by 35%",
+      // "Integrated OpenSearch for content search across question banks, including indexing strategy and query tuning",
+      // "Optimised assessment submission performance using Reactive Java and SQS, reducing submission time from 2 minutes to 1.3 seconds",
+      // "Resolved 13+ critical CVE vulnerabilities by auditing and upgrading vulnerable dependencies across the platform",
+      // "Led frontend architecture, sprint planning, and design reviews while mentoring 6+ engineers",
+      // "Led application migration to a new CI/CD setup on AWS, ensuring zero downtime and continuity across deployment changes",
+      // "Presented technical decisions to clients and leadership, improving compliance by 15% and maintaining 99% uptime",
+      // "Leveraged Claude and GitHub Copilot during development to improve delivery speed and code quality",
     ],
-    stack: [] 
+    stack: []
   },
   {
     company: "LearningMate",
@@ -355,7 +370,7 @@ export const posts = [
 ];
 
 export const navLinks = [
-  { label: "about", href: "#about" },
+  // { label: "about", href: "#about" },
   { label: "skills", href: "#skills" },
   { label: "work", href: "#experience" },
   // { label: "projects", href: "#projects" },

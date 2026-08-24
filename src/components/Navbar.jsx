@@ -28,6 +28,7 @@ const Navbar = () => {
           href="#top"
           className="flex items-center gap-2 group"
           aria-label="Home"
+          data-cursor-hover
         >
           <span className="w-8 h-8 rounded-md bg-ink text-cream grid place-items-center font-serif text-lg font-semibold">
             a.
@@ -45,6 +46,7 @@ const Navbar = () => {
               key={l.label}
               href={l.href}
               className={`font-mono ${monoSizes.md} text-inkSoft hover:text-amber transition-colors link-sweep`}
+              data-cursor-hover
             >
               {l.label}
             </a>
@@ -56,7 +58,7 @@ const Navbar = () => {
             asChild
             className={`bg-ink text-cream hover:bg-amber rounded-full px-5 h-10 font-mono ${monoSizes.sm} tracking-wide shadow-none`}
           >
-            <a href="#contact">
+            <a href="#contact" data-cursor-hover>
               say hello <ArrowUpRight className="w-4 h-4 ml-1" />
             </a>
           </Button>
@@ -80,6 +82,7 @@ const Navbar = () => {
                 href={l.href}
                 onClick={() => setOpen(false)}
                 className="font-mono text-sm text-inkSoft hover:text-amber"
+                data-cursor-hover
               >
                 - {l.label}
               </a>
