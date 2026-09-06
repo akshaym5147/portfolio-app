@@ -52,10 +52,6 @@ const Contact = () => {
             Let’s build something
             <span className="italic text-amber"> quietly remarkable</span>.
           </h2>
-          <p className={`mt-5 text-inkSoft ${proseSizes["2xl"]} leading-relaxed max-w-md`}>
-            I’m selectively taking on contract & advisory work for the rest of
-            2025. Short notes, long briefs - both welcome.
-          </p>
 
           <div className="mt-10 space-y-4">
             <a
@@ -164,9 +160,6 @@ const Contact = () => {
           </div>
 
           <div className="mt-7 flex flex-wrap items-center justify-between gap-4">
-            <div className={`font-mono ${monoSizes.xs} text-inkSoft`}>
-              <span className="text-amber">❯</span> saved locally for this demo
-            </div>
             <Button
               type="submit"
               disabled={loading}

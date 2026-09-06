@@ -18,7 +18,7 @@ export const profile = {
     { label: "LinkedIn", href: "https://linkedin.com", handle: "in/akshay" },
   ],
   stats: [
-    { label: "Years building", value: "7+" },
+    { label: "Years building", value: "7" },
     { label: "Shipped products", value: "5+" },
     // { label: "Open-source stars", value: "0k" },
     // { label: "Cups of chai", value: "∞" }

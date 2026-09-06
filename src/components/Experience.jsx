@@ -20,7 +20,7 @@ const Experience = () => {
           <div className="absolute left-[7px] top-2 bottom-2 w-px bg-line hidden md:block" />
           <ul className="space-y-10">
             {experience.map((job) => (
-              <li key={job.company} className="relative md:pl-10">
+              <li key={`${job.company}-${job.period}`} className="relative md:pl-10">
                 <span className="hidden md:block absolute left-0 top-2 w-4 h-4 rounded-full border-2 border-amber bg-cream" />
                 <div className="flex flex-wrap items-baseline justify-between gap-3">
                   <div>

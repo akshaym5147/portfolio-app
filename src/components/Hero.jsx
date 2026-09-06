@@ -12,16 +12,6 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-10 pt-16 pb-20 md:pb-28 grid md:grid-cols-12 gap-10 md:gap-14 items-start">
         {/* Left - copy */}
         <div className="md:col-span-8">
-          <div className="flex items-center gap-3 mb-8">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage opacity-70" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-sage" />
-            </span>
-            <span className={`font-mono ${monoSizes.sm} uppercase ${tracking.status} text-inkSoft`}>
-              available for select work · Q4 2025
-            </span>
-          </div>
-
           <h1 className={`font-serif ${headingSizes.base} ${leading.snug} ${headingSizes.sm} ${headingSizes.lg} md:leading-[0.98] text-ink ${tracking.heading}`}>
             Hello, I’m{" "}
             <span className="italic text-amber">{profile.firstName}</span>.
@@ -60,7 +50,7 @@ const Hero = () => {
         </div>
 
         {/* Right - terminal card */}
-        <div className="md:col-span-4 md:pt-10">
+        <div className="md:col-span-4">
           <div className="card-warm rounded-xl border border-line/70 bg-paper overflow-hidden">
             <div className="flex items-center gap-2 px-4 py-3 border-b border-line/70 bg-parchment">
               <span className="w-3 h-3 rounded-full bg-rose/70" />
@@ -81,9 +71,9 @@ const Hero = () => {
                 <span className="text-amber">❯</span> cat stack.txt
               </div>
               <div className="pl-4 text-inkSoft">
-                react · typescript · java
+                javascript · typescript · react
                 <br />
-                postgres · aws · a bit of python
+                java · spring boot
               </div>
               <div className="mt-3">
                 <span className="text-amber">❯</span> now
@@ -91,7 +81,7 @@ const Hero = () => {
               <div className="pl-4 text-inkSoft">
                 building at{" "}
                 <span className="underline decoration-amber/60 underline-offset-2">
-                  lumen health
+                  Imagine Learning
                 </span>
               </div>
               <div className="mt-3 caret">
