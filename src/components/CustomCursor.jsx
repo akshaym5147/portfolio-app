@@ -35,7 +35,7 @@ export default function CustomCursor({ clickAnimation = "both" }) {
   const current = useRef({ x: 0, y: 0 });
   const rafId = useRef(null);
 
-  const LERP_FACTOR = 0.15;
+  const LERP_FACTOR = 0.18;
 
   useEffect(() => {
     const outer = outerRef.current;
