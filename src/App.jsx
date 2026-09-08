@@ -8,7 +8,6 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Testimonials from "./components/Testimonials";
-import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
@@ -28,7 +27,6 @@ const Portfolio = () => {
         {/* <Projects /> */}
         <Education />
         {/* <Testimonials /> */}
-        {/* <Blog /> */}
         <Contact />
       </main>
       {/* <Footer /> */}

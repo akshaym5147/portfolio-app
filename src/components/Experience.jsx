@@ -3,6 +3,20 @@ import { experience } from "../mock";
 import SectionLabel from "./SectionLabel";
 import { ArrowUpRight } from "lucide-react";
 
+const CompanyTitle = ({name, link}) => {
+  return (
+    <a
+      href={link}
+      className="text-amber font-medium link-sweep inline-flex items-center gap-1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {name}
+      <ArrowUpRight className="w-3.5 h-3.5" />
+    </a>
+  )
+}
+
 const Experience = () => {
   return (
     <section id="experience" className="border-b border-line/60">
@@ -28,13 +42,9 @@ const Experience = () => {
                       {job.role}
                     </div>
                     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-inkSoft">
-                      <a
-                        href="#"
-                        className="text-amber font-medium link-sweep inline-flex items-center gap-1"
-                      >
-                        {job.company}
-                        <ArrowUpRight className="w-3.5 h-3.5" />
-                      </a>
+                      <CompanyTitle key={job.company} name={job.company} link={job.companyLink} />
+                      {job.client && <span className="text-line">•</span>}
+                      {job.client && <CompanyTitle key={job.client || Date.now()} name={job.client} link={job.clientLink} />}
                       <span className="text-line">•</span>
                       <span className="text-[14px]">{job.location}</span>
                     </div>
@@ -54,7 +64,7 @@ const Experience = () => {
                 </ul>
 
                 <div className="mt-5 flex flex-wrap gap-2">
-                  {job.stack.map((s) => (
+                  {job?.stack?.map((s) => (
                     <span
                       key={s}
                       className={`font-mono ${monoSizes.xs} uppercase tracking-[0.14em] text-inkSoft border border-line rounded-full px-3 py-1 bg-cream`}

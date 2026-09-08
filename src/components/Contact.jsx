@@ -47,7 +47,7 @@ const Contact = () => {
     <section className="border-b border-line/60 bg-paper/40" id="contact">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-14">
         <div className="md:col-span-5">
-          <SectionLabel index="08" label="contact" />
+          <SectionLabel index="05" label="contact" />
           <h2 className={`font-serif text-4xl md:text-5xl ${leading.section} text-ink tracking-tight mt-6`}>
             Let’s build something
             <span className="italic text-amber"> quietly remarkable</span>.
@@ -89,7 +89,7 @@ const Contact = () => {
                 key={s.label}
                 href={s.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className={`inline-flex items-center gap-1.5 font-mono text-[11.5px] uppercase ${tracking.status} border border-line rounded-full px-3.5 py-2 bg-cream text-inkSoft hover:border-amber hover:text-amber transition-colors`}
               >
                 {s.label}

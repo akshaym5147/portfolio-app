@@ -14,8 +14,8 @@ export const profile = {
   workspace:
     "https://images.unsplash.com/photo-1642155664770-48f7e2299458?auto=format&fit=crop&w=1200&q=80",
   socials: [
-    { label: "GitHub", href: "https://github.com", handle: "@akshay-dev" },
-    { label: "LinkedIn", href: "https://linkedin.com", handle: "in/akshay" },
+    { label: "GitHub", href: "https://github.com/akshaym5147" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/akshay-m-b64957169" },
   ],
   stats: [
     { label: "Years building", value: "7" },
@@ -149,9 +149,12 @@ export const skills = [
 export const experience = [
   {
     company: "LearningMate",
+    client: 'Imagine Learning',
     role: "Senior Full-Stack Engineer",
     period: "2022 - Present",
     location: "Andheri - Mumbai",
+    companyLink: 'https://learningmate.com/',
+    clientLink: 'https://www.imaginelearning.com/',
     bullets: [
       "Led frontend architecture and design reviews as technical anchor for a 6-engineer team, mentoring engineers and unblocking critical technical challenges on a high-concurrency real-time education platform.",
       "Architected WCAG 2.1-compliant, cross-browser features in React, JavaSript, TypeScript, and Redux - resolving accessibility gaps across varying US school-district compliance requirements.",
@@ -207,9 +210,12 @@ export const experience = [
   },
   {
     company: "LearningMate",
+    client: 'Imagine Learning',
     role: "Software Engineer",
     period: "2021 - 2022",
     location: "Andheri - Mumbai",
+    companyLink: 'https://learningmate.com/',
+    clientLink: 'https://www.imaginelearning.com/',
     bullets: [
       "Built the core authoring experience used by 1M+ authors to create and publish assessments content such as activities.",
       "Built diagnostics feature for authored content which reduced 70% human publishing errors.",
@@ -217,7 +223,7 @@ export const experience = [
       "Integrated New Relic and Grafana dashboards, enabling proactive error monitoring for a previously untraceable micro-frontend.",
       "Reduced bundle size by 38% (7MB→4.3MB) and nearly halved page load time via lazy loading, and code-splitting.",
     ],
-    stack: ['react', 'js/ts'],
+    // stack: ['react', 'js/ts'],
   },
   {
     company: "Sankey solutions",
@@ -251,92 +257,19 @@ export const projects = [
     href: "#",
     year: "2024"
   },
-  {
-    id: "p2",
-    title: "Pulse Analytics",
-    subtitle: "Real-time dashboards for product teams.",
-    description:
-      "Ingests 2M events/day and renders sub-second dashboards. ClickHouse + FastAPI + React with a custom charting DSL.",
-    tags: ["FastAPI", "ClickHouse", "React", "Realtime"],
-    image:
-      "https://images.unsplash.com/photo-1686061592689-312bbfb5c055?auto=format&fit=crop&w=900&q=80",
-    href: "#",
-    year: "2024"
-  },
-  {
-    id: "p3",
-    title: "Fieldnote",
-    subtitle: "A journaling app for engineers.",
-    description:
-      "Mobile-first markdown journal with local-first sync, end-to-end encryption, and a lovely typography-first reader.",
-    tags: ["React Native", "CRDT", "Mobile", "E2EE"],
-    image:
-      "https://images.unsplash.com/photo-1767449441925-737379bc2c4d?auto=format&fit=crop&w=900&q=80",
-    href: "#",
-    year: "2023"
-  },
-  {
-    id: "p4",
-    title: "Harvest OS",
-    subtitle: "A CLI for small farms.",
-    description:
-      "Open-source CLI & API for tracking yields, rotations and input costs on small holdings. 2.3k GitHub stars.",
-    tags: ["Python", "CLI", "Open-source"],
-    image:
-      "https://images.unsplash.com/photo-1773966071293-bea3d7646fd1?auto=format&fit=crop&w=900&q=80",
-    href: "#",
-    year: "2023"
-  },
-  {
-    id: "p5",
-    title: "Kettle",
-    subtitle: "A warm chat client for teams.",
-    description:
-      "An opinionated Slack alternative built around focus, threads, and async-first rituals. Side project - 500 beta users.",
-    tags: ["Next.js", "WebSockets", "Design"],
-    image:
-      "https://images.unsplash.com/photo-1633250391894-397930e3f5f2?auto=format&fit=crop&w=900&q=80",
-    href: "#",
-    year: "2022"
-  },
-  {
-    id: "p6",
-    title: "Monsoon UI",
-    subtitle: "A React component library.",
-    description:
-      "Accessible, themeable components for indie hackers. Tree-shakeable, RSC-friendly, ~8kb gzipped.",
-    tags: ["React", "A11y", "Library"],
-    image:
-      "https://images.unsplash.com/photo-1617240016072-d92174e44171?auto=format&fit=crop&w=900&q=80",
-    href: "#",
-    year: "2022"
-  }
 ];
 
 export const education = [
   {
-    school: "BITS Pilani",
-    degree: "B.E., Computer Science",
-    period: "2015 - 2019",
-    details:
-      "Graduated with distinction. Undergraduate thesis on distributed consensus; published at an ACM student workshop.",
-    grade: "CGPA 9.1 / 10"
+    school: "Viva college",
+    degree: "BSC in Information Technology",
+    period: "2016 - 2019",
+    grade: "CGPA 8.10 / 10"
   },
   {
-    school: "Recurse Center",
-    degree: "Self-directed programming residency",
-    period: "Winter 2022",
-    details:
-      "12-week residency in Brooklyn. Wrote a toy database, a terminal emulator and gave three talks on systems programming.",
-    grade: "Alumni"
-  },
-  {
-    school: "Coursera · Stanford",
-    degree: "Machine Learning Specialization",
-    period: "2021",
-    details:
-      "Completed Andrew Ng's specialization; built a production-grade recommender as a capstone.",
-    grade: "Honors"
+    school: "Viva college",
+    degree: "HSC in Science - Information Technology",
+    period: "2014 - 2016",
   }
 ];
 

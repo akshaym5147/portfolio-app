@@ -31,7 +31,7 @@ const Hero = () => {
               asChild
               className={`bg-ink text-cream hover:bg-amber rounded-full px-6 h-12 font-mono ${monoSizes.sm} tracking-wide`}
             >
-              <a href="#projects">
+              <a href="#experience">
                 see my work
                 <ArrowDownRight className="w-4 h-4 ml-2" />
               </a>

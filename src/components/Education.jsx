@@ -8,11 +8,9 @@ const Education = () => {
     <section className="border-b border-line/60" id="education">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28">
         <div className="max-w-3xl">
-          <SectionLabel index="05" label="education" />
+          <SectionLabel index="04" label="education" />
           <h2 className={`font-serif text-4xl md:text-5xl ${leading.section} text-ink tracking-tight mt-6`}>
-            A degree, a residency, and
-            <span className="italic text-amber"> a stubborn habit </span>
-            of learning.
+            The academic <span className="italic text-amber"> chapter. </span>
           </h2>
         </div>
 
@@ -35,7 +33,7 @@ const Education = () => {
               </div>
               <div className={`mt-1 text-inkSoft ${proseSizes.md}`}>{e.degree}</div>
               <div className={`mt-4 font-mono ${monoSizes.xs} uppercase ${tracking.status} text-amber`}>
-                {e.period} · {e.grade}
+                {e.period} {`${e.grade ? '.' : ''} ${e.grade || ''}`}
               </div>
               <p className={`mt-4 text-inkSoft ${proseSizes.md} leading-relaxed`}>
                 {e.details}
