@@ -36,6 +36,7 @@ const Portfolio = () => {
 };
 
 function App() {
+  console.log("BASE_URL:", import.meta.env.BASE_URL);
   return (
     <div className="App">
       <BrowserRouter basename={import.meta.env.BASE_URL}>
