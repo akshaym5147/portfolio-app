@@ -16,6 +16,7 @@ export const profile = {
   socials: [
     { label: "GitHub", href: "https://github.com/akshaym5147" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/akshay-m-b64957169" },
+    { label: "Leetcode", href: "https://leetcode.com/u/akshay_muge/" },
   ],
   stats: [
     { label: "Years building", value: "7" },

@@ -16,14 +16,15 @@ const Hero = () => {
             Hello, I’m{" "}
             <span className="italic text-amber">{profile.firstName}</span>.
             <br />
-            I own what I ship.
           </h1>
+          {/* <br /> */}
+          {/* <span className={`font-serif ${headingSizes.base} ${leading.snug} ${headingSizes.sm} md:leading-[0.98] text-ink ${tracking.heading}`}> Building Systems.</span>
+          <span className={`font-serif ${headingSizes.base} ${leading.snug} ${headingSizes.sm} md:leading-[0.98] text-ink ${tracking.heading}`}> Crafting Experiences.</span> */}
 
-          <p className="mt-8 max-w-xl text-inkSoft text-lg leading-relaxed">
-            A full-stack engineer with seven years of shipping products across
-            edtech, fleet, and social media. I believe good software isn't done
-            until it's documented - the code, the comma, and the query plan matter
-            in equal measure.
+          <p className="font-serif mt-8 max-w-xl text-inkSoft text-lg leading-relaxed">
+            Full-Stack Engineer with 7 years of experience building and shipping products across edtech, fleet, and social platforms.
+            <br />
+            I turn complex problems into scalable systems and thoughtful experiences, blending solid backend architecture with polished frontend interactions.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
