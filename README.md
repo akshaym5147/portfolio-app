@@ -86,6 +86,15 @@ Tweak colors & fonts:
 
 ---
 
+## Deploy to GitHub Pages
+Build the application
+`yarn build`
+
+The production bundle is generated in: `docs/`
+Commit the generated docs/ folder to the main branch.
+
+---
+
 ## Notes
 
 - The **contact form** is frontend-only and saves messages to `localStorage` under the key `akshay.portfolio.messages`. Replace `Contact.jsx`'s submit handler with a real API call if/when you add a backend.
