@@ -10,7 +10,7 @@ export const profile = {
   phone: "+91 7083325829",
   resumeUrl: "#",
   portrait:
-    "https://images.unsplash.com/photo-1752738372136-2602aaafdcb7?auto=format&fit=crop&w=900&q=80",
+    "",
   workspace:
     "https://images.unsplash.com/photo-1642155664770-48f7e2299458?auto=format&fit=crop&w=1200&q=80",
   socials: [

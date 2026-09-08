@@ -26,14 +26,14 @@ export default defineConfig(async () => {
 
   return {
     plugins,
-    base: './',
+    base: '/portfolio-app/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),
       },
     },
     build: {
-      outDir: 'build',
+      outDir: 'docs',
       sourcemap: true,
     },
     server: {
